@@ -1,12 +1,12 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, {FormEvent, useState} from "react";
 
 import { postLogin } from "../../services/auth/api";
 import { useNavigate } from "react-router-dom";
 
 const Authentication = () => {
     const navigate = useNavigate();
-    const {username, setUsername} = useState<string>("");
-    const {password, setPassword} = useState<string>("");
+    const [username, setUsername] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
     
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
