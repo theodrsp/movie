@@ -1,4 +1,4 @@
-import React, {FormEvent, useState} from "react";
+import {FormEvent, useState} from "react";
 
 import { postLogin } from "../../services/auth/api";
 import { useNavigate } from "react-router-dom";

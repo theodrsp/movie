@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import TvShowCard from "../../components/tvShowCard";
 import { getTVShowMovie } from "../../services/tv-show/api-tv-show";

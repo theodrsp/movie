@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import PopularMovieCard from "../../components/card/PopularMovieCard";
 import { getPopularMovie } from "../../services/popular-movie";
