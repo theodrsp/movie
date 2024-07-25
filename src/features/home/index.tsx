@@ -8,7 +8,7 @@ import { useQuery } from "../../hooks/useQuery";
 const Home = () => {
   const navigate = useNavigate();
   const query = useQuery();
-  const page = (query.get("page") !== null ? query.get("page") : 1) as string;
+  const page = (query.get("") !== null ? query.get("page") : 1) as string;
 
   // const [page, setPage] = useState<number>(1);
   const [loading, setLoading] = useState(false);

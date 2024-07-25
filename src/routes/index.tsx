@@ -9,10 +9,6 @@ import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
-    path: "/login",
-    element: <Authentication />,
-  },
-  {
     element: <ProtectedRoutes />,
     children: [
       {
@@ -34,6 +30,10 @@ export const router = createBrowserRouter([
           {
             path: "/tv-show",
             element: <TVShow />,
+          },
+          {
+            path: "/login",
+            element: <Authentication />,
           },
         ],
       },
