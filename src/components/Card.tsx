@@ -9,7 +9,7 @@ interface Props {
 }
 
 const TvShowCard = (props: Props) => {
-  const { title, poster_path, release_date, overview, size } = props;
+  const {title, poster_path, release_date, overview, size } = props;
   const [showOverview, setShowOverview] = useState(false);
 
   const toggleOverview = () => {

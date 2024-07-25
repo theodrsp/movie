@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import PopularMovieCard from "../../components/card/PopularMovieCard";
+import TvShowCard from "../../components/Card";
 import { getPopularMovie } from "../../services/popular-movie";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "../../hooks/useQuery";
@@ -46,7 +46,7 @@ const PopularMovie = () => {
       {!loading ? (
         <div className="flex flex-row flex-wrap gap-5 justify-center">
           {PopularMovie?.results.map((item: PopularMovie) => (
-            <PopularMovieCard poster_path={item.poster_path} title={item.title} release_date={item.release_date} overview={item.overview} size="w-40" />
+            <TvShowCard poster_path={item.poster_path} title={item.title} release_date={item.release_date} overview={item.overview} size="w-40" />
           ))}
         </div>
       ) : (

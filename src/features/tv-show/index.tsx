@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import TvShowCard from "../../components/tvShowCard";
+import TvShowCard from "../../components/Card";
 import { getTVShowMovie } from "../../services/tv-show/api-tv-show";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "../../hooks/useQuery";
@@ -50,7 +50,7 @@ const TVShow = () => {
           ))}
         </div>
       ) : (
-        <div>Loading ...</div>
+        <div>Loading...</div>
       )}
 
       <div className="flex flex-row justify-between">

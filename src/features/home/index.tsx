@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import MovieCard from "../../components/movieCard";
+import TvShowCard from "../../components/Card";
 import { getTopRatedMovie } from "../../services";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "../../hooks/useQuery";
@@ -48,7 +48,7 @@ const Home = () => {
       {!loading ? (
         <div className="flex flex-row flex-wrap gap-5 justify-center">
           {TopRatedDate?.results.map((item: Movie) => (
-            <MovieCard poster_path={item.poster_path} title={item.title} release_date={item.release_date} overview={item.overview} size="w-40" />
+            <TvShowCard poster_path={item.poster_path} title={item.title} release_date={item.release_date} overview={item.overview} size="w-40" />
           ))}
         </div>
       ) : (
